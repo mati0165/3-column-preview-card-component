@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.box h1 {
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 1.5rem;
+}
+.box p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+img {
+    padding-bottom: 1.5rem;
+}
+.sedan {
+    max-width:275px;
+    background-color: hsl(31, 77%, 52%);
+}
+.suv {
+    max-width:275px;
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    max-width: 275px;
+    background-color: hsl(179, 100%, 13%);
+}
+.box {
+    padding: 50px;
+}
+.button {
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 26px;
+    margin-top: 45px;
+    display: inline-block;
+    border: white solid;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.btn-sedan {
+    color: hsl(31, 77%, 52%);
+}
+.btn-suv {
+    color: hsl(184, 100%, 22%);
+}
+.btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+.button:hover {
+    border-color: white;
+    background:transparent;
+    color: white;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media only screen and (max-width: 768px){
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
